@@ -7,6 +7,8 @@
 //  MIT Licensed
 //
 
+var exec = require('cordova/exec'),
+    cordova = require('cordova');
   module.exports = {
     
     saveImageDataToLibrary:function(successCallback, failureCallback, canvas) {
