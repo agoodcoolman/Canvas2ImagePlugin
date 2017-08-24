@@ -21,7 +21,7 @@ var exec = require('cordova/exec'),
         }
         else {
             
-            var imageData = canvas.toDataURL('image/jpeg'， 0.5).replace(/data:image\/jpeg;base64,/,'');
+            var imageData = canvas.toDataURL('image/jpeg').replace(/data:image\/jpeg;base64,/,'');
             return cordova.exec(successCallback, failureCallback, "Canvas2ImagePlugin","saveImageDataToLibrary",[imageData]);
         }
     }
